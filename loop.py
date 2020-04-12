@@ -8,10 +8,12 @@ for value in x :
 for value in y:
     print(value + "hello")
 
+#looping menggunakan input
 for i in x:
     x[i] = input("tulis kalimat : ")
     print(x)
 
+#looping menggunakan while
 i=0
 while i<6:
     print(i)

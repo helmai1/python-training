@@ -18,7 +18,7 @@ b = input("angka 2 : ")
 angka(int(a))
 
 
-def tanya(x="",y=""):
+def name(x="",y=""):
     # kondisi di python and, or, not jika dijava &&, ||, !
     if(x == "" or y == ""):
         return print("isi nama dengan benar!")
@@ -27,4 +27,4 @@ def tanya(x="",y=""):
         return print(z)
 a=input("masukan nama depan : ")
 b=input("masukan nama belakang : ")
-tanya(a,b)
+name(a,b)
