@@ -1,19 +1,19 @@
 ##APLIKASI DICTIONARY / KAMUS DALAM BAHASA INGGRIS
 
 import json
-from difflib import get_close_matches
+from difflib import get_close_matches #Library matches untuk mencocokan data
 
 data = json.load(open("original.json"))
 tryagain = "y"
 
 def translate(word):
-    word = word.lower()
+    word = word.lower() #Convert menjadi huruf kecil
     if word in data:
         return data[word]
     elif word.title() in data:
-        return data[word.title()]
+        return data[word.title()] #Convert menjadi huruf pertama kapital
     elif word.upper() in data:
-        return data[word.upper()]
+        return data[word.upper()] #Convert menjadi huruf kapital
     elif len(get_close_matches(word, data.keys())) > 0:
         print("maksud anda %s " %get_close_matches(word, data.keys())[0])
         press = input("press y or n ")
