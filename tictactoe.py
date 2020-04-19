@@ -58,6 +58,7 @@ def playerMove():
         except Exception as e:
             print('Please type a number')
 
+#pergerakan bot atau AI
 def computerMove():
     possibleMove = [x for x, letter in enumerate(board) if letter == ' ' and x != 0]
     move = 0
